@@ -1,0 +1,6 @@
+{
+  "plugins": [
+    "react-obsidian/dist/transformers/babel-plugin-obsidian",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }]
+  ]
+}

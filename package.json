@@ -1,0 +1,50 @@
+{
+  "name": "obsidian-tic-tac-toe",
+  "version": "0.1.0",
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.22.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-obsidian": "^0.0.45",
+    "react-scripts": "5.0.1",
+    "reflect-metadata": "^0.1.13",
+    "typescript": "5.1.x",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.25",
+    "customize-cra": "1.0.0",
+    "react-app-rewired": "2.2.1"
+  },
+  "peerDependencies": {
+    "@babel/core": "*"
+  },
+  "scripts": {
+    "_prestart": "rm -rf node_modules/.cache/",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

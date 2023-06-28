@@ -1,0 +1,11 @@
+import { useObserver } from "react-obsidian"
+import { GameModel } from "../../../core/model/GameModel";
+
+export const useSquareViewModel = (index: number, model: GameModel) => {
+  const [squares] = useObserver(model.squares);
+
+  return {
+    onClick: () => model.onSquareClick(index),
+    text: squares[index],
+  }
+}
