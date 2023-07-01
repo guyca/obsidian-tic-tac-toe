@@ -1,4 +1,3 @@
-import "reflect-metadata";
 import { Board } from "./components/board/Board";
 import { Status } from "./components/status/Status";
 import { History } from "./components/history/History";

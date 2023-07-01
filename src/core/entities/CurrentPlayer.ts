@@ -8,6 +8,5 @@ export class CurrentPlayer extends Observable<PlayerMark> {
 
   public nextPlayer() {
     this.value = this.value === 'X' ? 'O' : 'X';
-    console.log('nextPlayer -> ', this.value);
   }
 }

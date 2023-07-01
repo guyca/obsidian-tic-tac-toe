@@ -6,8 +6,8 @@ import { History } from "../entities/History";
 
 export class GameModel {
   private currentPlayer = new CurrentPlayer();
-  public history = new History();
   public squares = new Squares();
+  public history = new History(this.squares.value);
   public status = new MediatorObservable<string>(`Next player: ${this.currentPlayer.value}`)
     .addSource(this.currentPlayer, (player) => {
       const winner = this.calculateWinnerUseCase.calculate(this.squares.value);

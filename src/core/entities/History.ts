@@ -8,8 +8,8 @@ type Entry = {
 }
 
 export class History extends Observable<Entry[]> {
-  constructor() {
-    super([{ text: 'Go to game start', squares: [], currentPlayer: 'X'}]);
+  constructor(squares: string[]) {
+    super([{ text: 'Go to game start', squares: squares, currentPlayer: 'X'}]);
   }
 
   public add(squares: string[], currentPlayer: PlayerMark) {
