@@ -1,12 +1,20 @@
 import { DependenciesOf, injectComponent } from "react-obsidian";
 import { HistoryGraph } from "./di/HistoryGraph";
-import { createEntry } from "./Entry";
 
-const _History = ({useViewModel}: DependenciesOf<HistoryGraph, 'useViewModel'>) => {
+type Injected = DependenciesOf<HistoryGraph, 'useViewModel' | 'componentFactory'>;
+
+export const _History = ({useViewModel, componentFactory}: Injected) => {
   const {entries} = useViewModel();
   return (
     <div className="history">
-      <h1>{entries.map(createEntry)}</h1>
+      <h1>
+        {
+          entries.map((_, index) => {
+            const Entry = componentFactory.create('entry')
+            return <Entry index={index} />
+          })
+        }
+      </h1>
     </div>
   );
 }

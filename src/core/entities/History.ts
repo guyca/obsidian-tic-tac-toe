@@ -1,7 +1,7 @@
 import { Observable } from "react-obsidian";
 import { PlayerMark } from "./PlayerMark";
 
-type Entry = {
+export type Entry = {
   text: string;
   squares: string[];
   currentPlayer: PlayerMark;
