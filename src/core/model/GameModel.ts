@@ -5,10 +5,10 @@ import { CalculateWinnerUseCase } from "../usecases/CalculateWinnerUseCase";
 import { History } from "../entities/History";
 
 export class GameModel {
-  private currentPlayer = new CurrentPlayer();
-  public squares = new Squares();
-  public history = new History(this.squares.value);
-  public status = new MediatorObservable<string>(`Next player: ${this.currentPlayer.value}`)
+  private readonly currentPlayer = new CurrentPlayer();
+  public readonly squares = new Squares();
+  public readonly history = new History(this.squares.value);
+  public readonly status = new MediatorObservable<string>(`Next player: ${this.currentPlayer.value}`)
     .addSource(this.currentPlayer, (player) => {
       const winner = this.calculateWinnerUseCase.calculate(this.squares.value);
       this.status.value = winner ? `Winner: ${winner}` : `Next player: ${player}`;
