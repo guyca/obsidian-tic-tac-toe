@@ -5,7 +5,7 @@
     "@babel/plugin-proposal-decorators": "^7.22.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-obsidian": "^0.0.46",
+    "react-obsidian": "^0.0.47",
     "react-scripts": "5.0.1",
     "reflect-metadata": "^0.1.13",
     "typescript": "5.1.x"

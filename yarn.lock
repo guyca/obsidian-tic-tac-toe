@@ -4993,8 +4993,8 @@ he@^1.2.0:
 
 hoist-non-react-statics@3.x.x:
   version "3.3.2"
-  resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
-  integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+  integrity sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U=
   dependencies:
     react-is "^16.7.0"
 
@@ -7754,10 +7754,10 @@ react-is@^18.0.0:
   resolved "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-obsidian@^0.0.46:
-  version "0.0.46"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/react-obsidian/-/react-obsidian-0.0.46.tgz#ff0d8b385e1c8274def09968bc3bff379b26a193"
-  integrity sha1-/w2LOF4cgnTe8JlovDv/N5smoZM=
+react-obsidian@^0.0.47:
+  version "0.0.47"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/react-obsidian/-/react-obsidian-0.0.47.tgz#edcf728dda1d7e0e18e279fb8d12ef1d82495176"
+  integrity sha1-7c9yjdodfg4Y4nn7jRLvHYJJUXY=
   dependencies:
     hoist-non-react-statics "3.x.x"
     reflect-metadata "~0.1.13"
