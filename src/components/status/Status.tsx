@@ -5,7 +5,7 @@ export const _Status = ({useViewModel}: DependenciesOf<StatusGraph, 'useViewMode
   const {status} = useViewModel();
 
   return (
-    <div className="status">{status}</div>
+    <div className="status" data-testid={'status'}>{status}</div>
   )
 }
 

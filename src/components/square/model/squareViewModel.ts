@@ -9,5 +9,6 @@ export const useSquareViewModel = (index: number, model: GameModel) => {
   return {
     onClick: () => model.onSquareClick(index),
     text: squares[index],
+    testId: `square-${index}`
   }
 }

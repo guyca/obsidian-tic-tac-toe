@@ -5,10 +5,10 @@ export type Props = { index: number };
 type Injected = DependenciesOf<SquareGraph, 'useViewModel'>;
 
 export const _Square = ({useViewModel}: Injected) => {
-  const {text, onClick} = useViewModel();
+  const {text, testId, onClick} = useViewModel();
 
   return (
-    <button className="square" onClick={onClick}>{text}</button>
+    <button className="square" onClick={onClick} data-testid={testId}>{text}</button>
   );
 };
 
