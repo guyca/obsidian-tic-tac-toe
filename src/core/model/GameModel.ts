@@ -1,10 +1,10 @@
-import { MediatorObservable } from "react-obsidian";
+import { MediatorObservable, Model } from "react-obsidian";
 import { CurrentPlayer } from "../entities/CurrentPlayer";  
 import { Squares } from "../entities/Squares";
 import { CalculateWinnerUseCase } from "../usecases/CalculateWinnerUseCase";
 import { History } from "../entities/History";
 
-export class GameModel {
+export class GameModel extends Model {
   private readonly currentPlayer = new CurrentPlayer();
   public readonly squares = new Squares();
   public readonly history = new History(this.squares.value);
@@ -14,7 +14,9 @@ export class GameModel {
       this.status.value = winner ? `Winner: ${winner}` : `Next player: ${player}`;
     });
 
-  constructor(private calculateWinnerUseCase: CalculateWinnerUseCase) {}
+  constructor(private calculateWinnerUseCase: CalculateWinnerUseCase) {
+    super();
+  }
 
   public onSquareClick(index: number) {
     if (this.squares.value[index]) return;
