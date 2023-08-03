@@ -1,18 +1,18 @@
-import { render, screen } from "@testing-library/react";
-import { _Status as Status } from "../../../../src/components/status/Status";
-import { StatusViewModel } from "../../../../src/components/status/model/statusViewModel";
+import { render, screen } from '@testing-library/react';
+import { _Status as Status } from '../../../../src/components/status/Status';
+import { StatusViewModel } from '../../../../src/components/status/model/statusViewModel';
 
-describe("Status", () => {
+describe('Status', () => {
   let useViewModel: StatusViewModel;
 
   beforeEach(() => {
     useViewModel = () => ({
-      status: "foo"
+      status: 'foo',
     });
   });
 
-  it("should render a status", () => {
-    render(<Status useViewModel={useViewModel}/>)
-    expect(screen.getByText("foo")).toBeDefined();
+  it('should render a status', () => {
+    render(<Status useViewModel={useViewModel} />);
+    expect(screen.getByText('foo')).toBeDefined();
   });
 });

@@ -1,8 +1,8 @@
-import { useObserver } from "react-obsidian";
-import { GameModel } from "../../../core/model/GameModel";
+import { useObserver } from 'react-obsidian';
+import { GameModel } from '../../../core/model/GameModel';
 
 export const useEntryViewModel = (index: number, model: GameModel) => {
   const [history] = useObserver(model.history);
   const onClick = () => model.onHistoryEntryClick(index);
-  return {text: history[index].text, onClick}
+  return { text: history[index].text, onClick };
 };

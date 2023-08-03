@@ -1,5 +1,5 @@
-import { Observable } from "react-obsidian";
-import { PlayerMark } from "./PlayerMark";
+import { Observable } from 'react-obsidian';
+import { PlayerMark } from './PlayerMark';
 
 export class CurrentPlayer extends Observable<PlayerMark> {
   constructor(startingPlayer: PlayerMark = 'X') {

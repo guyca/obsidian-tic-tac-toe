@@ -1,22 +1,23 @@
-import { DependenciesOf, injectComponent } from "react-obsidian";
-import { HistoryGraph } from "./di/HistoryGraph";
+import { DependenciesOf, injectComponent } from 'react-obsidian';
+import { HistoryGraph } from './di/HistoryGraph';
 
-type Injected = DependenciesOf<HistoryGraph, 'useViewModel' | 'componentFactory'>;
+type Injected = DependenciesOf<
+  HistoryGraph,
+  'useViewModel' | 'componentFactory'
+>;
 
-export const _History = ({useViewModel, componentFactory}: Injected) => {
-  const {entries} = useViewModel();
+export const _History = ({ useViewModel, componentFactory }: Injected) => {
+  const { entries } = useViewModel();
   return (
     <div className="history">
       <h1>
-        {
-          entries.map((_, index) => {
-            const Entry = componentFactory.create('entry')
-            return <Entry index={index} />
-          })
-        }
+        {entries.map((_, index) => {
+          const Entry = componentFactory.create('entry');
+          return <Entry index={index} />;
+        })}
       </h1>
     </div>
   );
-}
+};
 
 export const History = injectComponent(_History, HistoryGraph);

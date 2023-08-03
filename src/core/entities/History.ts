@@ -1,25 +1,25 @@
-import { Observable } from "react-obsidian";
-import { PlayerMark } from "./PlayerMark";
+import { Observable } from 'react-obsidian';
+import { PlayerMark } from './PlayerMark';
 
 export type Entry = {
   text: string;
   squares: string[];
   currentPlayer: PlayerMark;
-}
+};
 
 export class History extends Observable<Entry[]> {
   constructor(squares: string[]) {
-    super([{ text: 'Go to game start', squares: squares, currentPlayer: 'X'}]);
+    super([{ text: 'Go to game start', squares: squares, currentPlayer: 'X' }]);
   }
 
   public add(squares: string[], currentPlayer: PlayerMark) {
     this.value = [
       ...this.value,
       {
-        text: this.isEmpty ? 'Go to game start': `Go to move #${this.size}`,
+        text: this.isEmpty ? 'Go to game start' : `Go to move #${this.size}`,
         squares,
-        currentPlayer
-      }
+        currentPlayer,
+      },
     ];
   }
 

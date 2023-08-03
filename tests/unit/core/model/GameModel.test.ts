@@ -1,9 +1,9 @@
-import { mock } from "jest-mock-extended";
-import { GameModel } from "../../../../src/core/model/GameModel";
-import { CalculateWinnerUseCase } from "../../../../src/core/usecases/CalculateWinnerUseCase";
-import {when} from 'jest-when';
+import { mock } from 'jest-mock-extended';
+import { GameModel } from '../../../../src/core/model/GameModel';
+import { CalculateWinnerUseCase } from '../../../../src/core/usecases/CalculateWinnerUseCase';
+import { when } from 'jest-when';
 
-describe("GameModel", () => {
+describe('GameModel', () => {
   let uut: GameModel;
   let calculateWinnerUseCase: CalculateWinnerUseCase;
 
@@ -15,7 +15,17 @@ describe("GameModel", () => {
   it('should keep track of the board state', () => {
     expect(uut.squares.value).toEqual(Array(9).fill(undefined));
     uut.onSquareClick(1);
-    expect(uut.squares.value).toEqual([undefined, 'X', undefined, undefined, undefined, undefined, undefined, undefined, undefined]);
+    expect(uut.squares.value).toEqual([
+      undefined,
+      'X',
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+    ]);
   });
 
   it('should update the status after a square was clicked', () => {
@@ -37,7 +47,9 @@ describe("GameModel", () => {
   });
 
   it('should announce the winner when a player wins', () => {
-    when(calculateWinnerUseCase.calculate).calledWith(expect.anything()).mockReturnValue('X');
+    when(calculateWinnerUseCase.calculate)
+      .calledWith(expect.anything())
+      .mockReturnValue('X');
     uut.onSquareClick(0);
     expect(uut.status.value).toEqual('Winner: X');
   });

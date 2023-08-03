@@ -1,10 +1,10 @@
-import { act, renderHook } from "@testing-library/react";
-import { useSquareViewModel } from "../../../../../src/components/square/model/squareViewModel";
-import { GameModel } from "../../../../../src/core/model/GameModel";
-import { mockDeep } from "jest-mock-extended";
-import { when } from "jest-when";
-import { spyOnGetter } from "../../../../utils/spyOnGetter";
-import { Observable } from "react-obsidian";
+import { act, renderHook } from '@testing-library/react';
+import { useSquareViewModel } from '../../../../../src/components/square/model/squareViewModel';
+import { GameModel } from '../../../../../src/core/model/GameModel';
+import { mockDeep } from 'jest-mock-extended';
+import { when } from 'jest-when';
+import { spyOnGetter } from '../../../../utils/spyOnGetter';
+import { Observable } from 'react-obsidian';
 
 describe('squareViewModel', () => {
   const index = 1;
@@ -14,14 +14,12 @@ describe('squareViewModel', () => {
   beforeEach(() => {
     model = mockDeep<GameModel>();
     squares = new Observable(['A', 'B', 'C']);
-    when(spyOnGetter(model, 'squares'))
-      .calledWith()
-      .mockReturnValue(squares);
+    when(spyOnGetter(model, 'squares')).calledWith().mockReturnValue(squares);
   });
 
   const renderUut = () => {
     return renderHook(() => useSquareViewModel(index, model));
-  }
+  };
 
   it('should delegate onClick to the model', () => {
     const { result } = renderUut();

@@ -1,5 +1,5 @@
-import { fireEvent, render, screen } from "@testing-library/react";
-import App from "../../src/App";
+import { fireEvent, render, screen } from '@testing-library/react';
+import App from '../../src/App';
 
 describe('App', () => {
   it('should show the initial player', () => {
@@ -25,6 +25,6 @@ describe('App', () => {
 
   function clickOnSquare(x: number, y: number) {
     const square = screen.getByTestId(`square-${y * 3 + x}`);
-    fireEvent(square, new MouseEvent('click', { bubbles: true }))
+    fireEvent(square, new MouseEvent('click', { bubbles: true }));
   }
 });

@@ -1,10 +1,10 @@
-import { Graph, ObjectGraph, Provides } from "react-obsidian";
-import { useEntryViewModel } from "../model/entryViewModel";
-import { GameGraph } from "../../../core/di/GameGraph";
-import { Props } from "../Entry";
-import { GameModel } from "../../../core/model/GameModel";
+import { Graph, ObjectGraph, Provides } from 'react-obsidian';
+import { useEntryViewModel } from '../model/entryViewModel';
+import { GameGraph } from '../../../core/di/GameGraph';
+import { Props } from '../Entry';
+import { GameModel } from '../../../core/model/GameModel';
 
-@Graph({subgraphs: [GameGraph]})
+@Graph({ subgraphs: [GameGraph] })
 export class EntryGraph extends ObjectGraph {
   private index: number;
 
