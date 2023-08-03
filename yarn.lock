@@ -4180,11 +4180,6 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-prettier@^8.9.0:
-  version "8.9.0"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/eslint-config-prettier/-/eslint-config-prettier-8.9.0.tgz#094b6254b2804b0544f7cee535f802b6d29ee10b"
-  integrity sha1-CUtiVLKASwVE987lNfgCttKe4Qs=
-
 eslint-config-react-app@^7.0.1:
   version "7.0.1"
   resolved "https://registry.npmjs.org/eslint-config-react-app/-/eslint-config-react-app-7.0.1.tgz#73ba3929978001c5c86274c017ea57eb5fa644b4"
@@ -7538,10 +7533,10 @@ prelude-ls@~1.1.2:
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha512-ESF23V4SKG6lVSGZgYNpbsiaAkdab6ZgOxe52p7+Kid3W3u3bxR4Vfd/o21dmN7jSt0IwgZ4v5MUd26FEtXE9w==
 
-prettier@3.0.0:
-  version "3.0.0"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/prettier/-/prettier-3.0.0.tgz#e7b19f691245a21d618c68bc54dc06122f6105ae"
-  integrity sha1-57GfaRJFoh1hjGi8VNwGEi9hBa4=
+prettier@3.x.x:
+  version "3.0.1"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/prettier/-/prettier-3.0.1.tgz#65271fc9320ce4913c57747a70ce635b30beaa40"
+  integrity sha1-ZScfyTIM5JE8V3R6cM5jWzC+qkA=
 
 pretty-bytes@^5.3.0, pretty-bytes@^5.4.1:
   version "5.6.0"

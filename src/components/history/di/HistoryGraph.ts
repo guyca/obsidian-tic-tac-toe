@@ -7,7 +7,8 @@ import {
 import { GameGraph } from '../../../core/di/GameGraph';
 import { EntryFactory } from '../services/ComponentFactory';
 
-@LifecycleBound() @Graph({ subgraphs: [GameGraph] })
+@LifecycleBound()
+@Graph({ subgraphs: [GameGraph] })
 export class HistoryGraph extends ObjectGraph {
   @Provides()
   useViewModel(model: GameModel): HistoryViewModel {

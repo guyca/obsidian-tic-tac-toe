@@ -1,10 +1,13 @@
 import { Board } from './components/board/Board';
 import { Status } from './components/status/Status';
 import { History } from './components/history/History';
+import { TopBar } from './components/topBar/TopBar';
+import { Div } from './lib/ui/components/div';
 
 export default function Game() {
   return (
-    <div className="root">
+    <Div className="root">
+      <TopBar />
       <div className="game-container">
         <Status />
         <div className="game">
@@ -12,6 +15,6 @@ export default function Game() {
           <History />
         </div>
       </div>
-    </div>
+    </Div>
   );
 }
