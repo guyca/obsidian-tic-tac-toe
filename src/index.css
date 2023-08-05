@@ -45,9 +45,28 @@ ul {
 }
 
 body {
+  --color-background: #fafafa;
+  --color-foreground: #333;
+
+  background-color: var(--color-background);
+  color: var(--color-foreground);
   font-family: sans-serif;
   margin: 0px;
   padding: 0;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-background: #333;
+    --color-foreground: #efefef;
+  }
+}
+body.dark {
+  background-color: #333;
+  color: #efefef;
+}
+body.light {
+  background-color: #fafafa;
+  color: #333;
 }
 
 .game-container {

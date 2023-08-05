@@ -7760,9 +7760,9 @@ react-is@^18.0.0:
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
 react-obsidian@1.x.x:
-  version "1.2.0"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/react-obsidian/-/react-obsidian-1.2.0.tgz#27e31bec138174a2a4cc9d33731174b3f5f74249"
-  integrity sha1-J+Mb7BOBdKKkzJ0zcxF0s/X3Qkk=
+  version "1.4.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/react-obsidian/-/react-obsidian-1.4.0.tgz#f6c19b84e9a65b4519e324143d3d16a56603a00f"
+  integrity sha1-9sGbhOmmW0UZ4yQUPT0WpWYDoA8=
   dependencies:
     hoist-non-react-statics "3.x.x"
     reflect-metadata "~0.1.13"

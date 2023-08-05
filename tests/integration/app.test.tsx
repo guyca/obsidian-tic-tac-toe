@@ -1,8 +1,14 @@
 import { render, screen } from '@testing-library/react';
-import App from '../../src/App';
+import App from '../../src/app/App';
 import { fireClickEvent } from '../utils/fireClickEvent';
+import { mockGraphs } from 'react-obsidian';
+import { FrameworkGraphForIntegrationTests } from './fakes/FrameworkGraphForIntegrationTests';
 
 describe('App', () => {
+  beforeEach(() => {
+    mockGraphs({ FrameworkGraph: FrameworkGraphForIntegrationTests });
+  });
+
   it('should show the initial player', () => {
     render(<App />);
     expect(screen.getByText('Next player: X')).toBeDefined();

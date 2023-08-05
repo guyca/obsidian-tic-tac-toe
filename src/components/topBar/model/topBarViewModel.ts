@@ -1,4 +1,4 @@
-import { ThemeModel } from '../../../lib/ui/model/ThemeModel';
+import { ThemeModel } from '../../../presentation/model/ThemeModel';
 
 export const topBarViewModel = (themeModel: ThemeModel) => {
   return {

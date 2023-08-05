@@ -1,10 +1,10 @@
 import { Graph, ObjectGraph, Provides, Singleton } from 'react-obsidian';
 import { topBarViewModel } from '../model/topBarViewModel';
-import { GameGraph } from '../../../core/di/GameGraph';
-import { ThemeModel } from '../../../lib/ui/model/ThemeModel';
+import { ThemeModel } from '../../../presentation/model/ThemeModel';
+import { ThemeGraph } from '../../../core/di/ThemeGraph';
 
 @Singleton()
-@Graph({ subgraphs: [GameGraph] })
+@Graph({ subgraphs: [ThemeGraph] })
 export class TopBarGraph extends ObjectGraph {
   @Provides()
   useViewModel(themeModel: ThemeModel) {
