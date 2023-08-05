@@ -8,17 +8,15 @@ export class GameModel extends Model {
   private readonly currentPlayer = new CurrentPlayer();
   public readonly squares = new Squares();
   public readonly history = new History(this.squares.value);
-  public readonly status = new MediatorObservable<string>().mapSource(
-    this.currentPlayer,
-    (player) => {
-      const winner = this.calculateWinnerUseCase.calculate(this.squares.value);
-      return winner ? `Winner: ${winner}` : `Next player: ${player}`;
-    },
-  );
+  public readonly status = new MediatorObservable<string>();
   public readonly isReady = new Observable<boolean>(false);
 
   constructor(private calculateWinnerUseCase: CalculateWinnerUseCase) {
     super();
+    this.status.mapSource(this.currentPlayer, (player) => {
+      const winner = calculateWinnerUseCase.calculate(this.squares.value);
+      return winner ? `Winner: ${winner}` : `Next player: ${player}`;
+    });
   }
 
   public onSquareClick(index: number) {

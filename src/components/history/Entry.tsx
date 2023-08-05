@@ -11,7 +11,7 @@ const _Entry = ({ index, useViewModel }: Props & Injected) => {
   const { text, onClick } = useViewModel();
 
   return (
-    <li key={index}>
+    <li>
       <button onClick={onClick}>{text}</button>
     </li>
   );

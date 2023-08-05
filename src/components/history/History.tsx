@@ -13,7 +13,7 @@ export const _History = ({ useViewModel, componentFactory }: Injected) => {
       <h1>
         {entries.map((_, index) => {
           const Entry = componentFactory.create('entry');
-          return <Entry index={index} />;
+          return <Entry index={index} key={index} />;
         })}
       </h1>
     </div>
