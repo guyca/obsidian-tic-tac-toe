@@ -2,12 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
-}
-
 h1 {
   margin-top: 0;
   font-size: 22px;
@@ -51,9 +45,32 @@ ul {
 }
 
 body {
+  --color-background: #fafafa;
+  --color-foreground: #333;
+
+  background-color: var(--color-background);
+  color: var(--color-foreground);
   font-family: sans-serif;
-  margin: 20px;
+  margin: 0px;
   padding: 0;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-background: #333;
+    --color-foreground: #efefef;
+  }
+}
+body.dark {
+  background-color: #333;
+  color: #efefef;
+}
+body.light {
+  background-color: #fafafa;
+  color: #333;
+}
+
+.game-container {
+  padding: 20px;
 }
 
 .square {
@@ -92,3 +109,38 @@ body {
   margin-left: 20px;
 }
 
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2196f3; /* Material Design primary color */
+  color: white;
+  height: 3.75rem;
+  padding: 12px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.app-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.02rem;
+}
+
+.top-bar-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.circle-button {
+  border: none;
+  padding: 0px;
+  display: flex;
+  background-color: transparent;
+  padding: 4px;
+}
+
+.circle-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}

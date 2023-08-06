@@ -1,7 +1,14 @@
-import { fireEvent, render, screen } from '@testing-library/react';
-import App from '../../src/App';
+import { render, screen } from '@testing-library/react';
+import App from '../../src/app/App';
+import { fireClickEvent } from '../utils/fireClickEvent';
+import { mockGraphs } from 'react-obsidian';
+import { FrameworkGraphForIntegrationTests } from './fakes/FrameworkGraphForIntegrationTests';
 
 describe('App', () => {
+  beforeEach(() => {
+    mockGraphs({ FrameworkGraph: FrameworkGraphForIntegrationTests });
+  });
+
   it('should show the initial player', () => {
     render(<App />);
     expect(screen.getByText('Next player: X')).toBeDefined();
@@ -24,7 +31,6 @@ describe('App', () => {
   });
 
   function clickOnSquare(x: number, y: number) {
-    const square = screen.getByTestId(`square-${y * 3 + x}`);
-    fireEvent(square, new MouseEvent('click', { bubbles: true }));
+    fireClickEvent(`square-${y * 3 + x}`);
   }
 });

@@ -12,6 +12,7 @@ describe('Square', () => {
       return {
         text: 'square text',
         onClick,
+        testId: expect.anything(),
       };
     };
   });
