@@ -1,3 +1,4 @@
+import { Document } from '../../framework/Document';
 import { ColorScheme } from '../types';
 
 export class ApplyDarkModeUseCase {

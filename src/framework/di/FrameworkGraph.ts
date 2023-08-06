@@ -7,7 +7,7 @@ import { Document } from '../Document';
 export class FrameworkGraph extends ObjectGraph {
   @Provides()
   window(): Window {
-    return new Window();
+    return new Window(window);
   }
 
   @Provides()
