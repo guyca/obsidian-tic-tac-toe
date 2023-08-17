@@ -2,7 +2,6 @@
   "name": "obsidian-tic-tac-toe",
   "version": "0.1.0",
   "dependencies": {
-    "@babel/plugin-proposal-decorators": "^7.22.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-obsidian": "1.x.x",
@@ -12,6 +11,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
+    "@babel/plugin-proposal-decorators": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
     "@testing-library/jest-dom": "^5.16.5",
