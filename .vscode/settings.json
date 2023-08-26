@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["usecases"],
+  "cSpell.words": ["prestart", "usecases"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
