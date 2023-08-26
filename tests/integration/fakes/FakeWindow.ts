@@ -1,6 +1,7 @@
-import type { Window } from '../../../src/framework/Window';
+import { Window } from '../../../src/framework/Window';
+import { Interface } from '../../../src/utils/type';
 
-export class FakeWindow implements Omit<Window, 'prototype'> {
+export class FakeWindow implements Interface<Window> {
   public get currentColorScheme(): 'dark' | 'light' {
     return 'light';
   }

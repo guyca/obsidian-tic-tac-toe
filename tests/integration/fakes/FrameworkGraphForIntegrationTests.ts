@@ -12,8 +12,8 @@ export class FrameworkGraphForIntegrationTests
   implements FrameworkGraph
 {
   @Provides()
-  window(): Window {
-    return new FakeWindow();
+  window() {
+    return new FakeWindow() as Window;
   }
 
   @Provides()
