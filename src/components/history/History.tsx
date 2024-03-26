@@ -8,6 +8,7 @@ type Injected = DependenciesOf<
 
 export const _History = ({ useViewModel, componentFactory }: Injected) => {
   const { entries } = useViewModel();
+
   return (
     <div className="history">
       <h1>

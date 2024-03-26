@@ -1,5 +1,5 @@
-import { Document } from '../../framework/Document';
-import { ColorScheme } from '../types';
+import type { Document } from '../../framework/Document';
+import type { ColorScheme } from '../types';
 
 export class ApplyDarkModeUseCase {
   constructor(private readonly document: Document) {}

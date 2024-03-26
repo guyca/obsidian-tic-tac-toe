@@ -1,13 +1,16 @@
-type Props = {
-  onClick: () => void | unknown;
-};
+import { injectComponent, type DependenciesOf } from 'react-obsidian';
+import { TopBarGraph } from '../graph/TopBarGraph';
 
-export const DarkModeToggle = ({ onClick }: Props) => {
+type Injected = DependenciesOf<TopBarGraph, 'useViewModel'>;
+
+export const _DarkModeToggle = ({ useViewModel }: Injected) => {
+  const { toggleDarkMode } = useViewModel();
+
   return (
     <button
       data-testid={'darkModeToggle'}
       className="circle-button"
-      onClick={onClick}
+      onClick={toggleDarkMode}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -23,3 +26,5 @@ export const DarkModeToggle = ({ onClick }: Props) => {
     </button>
   );
 };
+
+export const DarkModeToggle = injectComponent(_DarkModeToggle, TopBarGraph);
