@@ -43,6 +43,7 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "npx jest",
+    "test-coverage": "test --code-coverage",
     "eject": "react-scripts eject",
     "lint": "npx eslint src --ext .ts,.tsx --fix"
   },
