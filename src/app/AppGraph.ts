@@ -1,8 +1,8 @@
 import { Graph, ObjectGraph, Provides, Singleton } from 'react-obsidian';
 import { useAppViewModel } from './appViewModel';
-import { GameModel } from '../core/model/GameModel';
+import { type GameModel } from '../core/model/GameModel';
 import { GameGraph } from '../core/di/GameGraph';
-import { ThemeModel } from '../presentation/model/ThemeModel';
+import { type ThemeModel } from '../presentation/model/ThemeModel';
 import { ThemeGraph } from '../core/di/ThemeGraph';
 
 @Singleton()

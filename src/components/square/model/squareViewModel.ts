@@ -1,5 +1,5 @@
 import { useObserver } from 'react-obsidian';
-import { GameModel } from '../../../core/model/GameModel';
+import { type GameModel } from '../../../core/model/GameModel';
 
 export type squareViewModel = () => ReturnType<typeof useSquareViewModel>;
 

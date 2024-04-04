@@ -1,4 +1,4 @@
-import { ThemeModel } from '../../../presentation/model/ThemeModel';
+import { type ThemeModel } from '../../../presentation/model/ThemeModel';
 
 export const topBarViewModel = (themeModel: ThemeModel) => {
   return {

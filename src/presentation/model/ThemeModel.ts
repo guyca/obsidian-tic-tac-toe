@@ -1,6 +1,6 @@
 import { MediatorObservable, Model } from 'react-obsidian';
-import { ApplyDarkModeUseCase } from '../useCases/applyDarkModeUseCase';
-import { Window } from '../../framework/Window';
+import { type ApplyDarkModeUseCase } from '../useCases/applyDarkModeUseCase';
+import { type Window } from '../../framework/Window';
 import { PreferredColorScheme } from './entities/PreferredColorScheme';
 
 export class ThemeModel extends Model {

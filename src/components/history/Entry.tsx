@@ -1,13 +1,14 @@
-import { DependenciesOf, injectComponent } from 'react-obsidian';
+import React from 'react';
+import { type DependenciesOf, injectComponent } from 'react-obsidian';
 import { EntryGraph } from './di/EntryGraph';
 
 export type Props = {
-  index: number;
+  index: number
 };
 
 type Injected = DependenciesOf<EntryGraph, 'useViewModel'>;
 
-const _Entry = ({ index, useViewModel }: Props & Injected) => {
+const _Entry = ({ useViewModel }: Props & Injected) => {
   const { text, onClick } = useViewModel();
 
   return (

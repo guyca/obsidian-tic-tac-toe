@@ -1,10 +1,10 @@
 import { Observable } from 'react-obsidian';
-import { PlayerMark } from './PlayerMark';
+import { type PlayerMark } from './PlayerMark';
 
 export type Entry = {
-  text: string;
-  squares: string[];
-  currentPlayer: PlayerMark;
+  text: string
+  squares: string[]
+  currentPlayer: PlayerMark
 };
 
 export class History extends Observable<Entry[]> {

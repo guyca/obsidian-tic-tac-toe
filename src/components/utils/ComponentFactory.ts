@@ -1,3 +1,3 @@
 export interface ComponentFactory<T = string> {
-  create(type: T);
+  create(type: T)
 }

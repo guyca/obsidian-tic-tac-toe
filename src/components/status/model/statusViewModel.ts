@@ -1,4 +1,4 @@
-import { GameModel } from '../../../core/model/GameModel';
+import { type GameModel } from '../../../core/model/GameModel';
 
 export type StatusViewModel = () => ReturnType<typeof useStatusViewModel>;
 

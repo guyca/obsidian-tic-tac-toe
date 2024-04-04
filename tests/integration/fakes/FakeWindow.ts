@@ -1,5 +1,5 @@
-import { Window } from '../../../src/framework/Window';
-import { Interface } from '../../../src/utils/type';
+import { type Window } from '../../../src/framework/Window';
+import { type Interface } from '../../../src/utils/type';
 
 export class FakeWindow implements Interface<Window> {
   public get currentColorScheme(): 'dark' | 'light' {
@@ -11,7 +11,7 @@ export class FakeWindow implements Interface<Window> {
   }
 
   public registerPreferredColorSchemeChangeListener(
-    onColorSchemeChange: (colorScheme: 'dark' | 'light') => void,
+    _onColorSchemeChange: (colorScheme: 'dark' | 'light') => void,
   ): void {
     // noop
   }

@@ -1,5 +1,5 @@
 import { Observable } from 'react-obsidian';
-import { ColorScheme } from '../../types';
+import { type ColorScheme } from '../../types';
 
 export class DarkMode extends Observable<ColorScheme> {
   public toggle() {

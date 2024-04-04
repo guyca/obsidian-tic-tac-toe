@@ -1,3 +1,4 @@
+import React from 'react';
 import { DarkModeToggle } from './buttons/darkModeToggle';
 
 export const TopBar = () => {

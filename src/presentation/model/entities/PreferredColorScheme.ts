@@ -1,6 +1,6 @@
 import { Observable } from 'react-obsidian';
-import { ColorScheme } from '../../types';
-import { Window } from '../../../framework/Window';
+import { type ColorScheme } from '../../types';
+import { type Window } from '../../../framework/Window';
 
 export class PreferredColorScheme extends Observable<ColorScheme> {
   constructor(private window: Window) {

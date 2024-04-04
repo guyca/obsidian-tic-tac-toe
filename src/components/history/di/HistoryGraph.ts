@@ -1,9 +1,6 @@
 import { Graph, LifecycleBound, ObjectGraph, Provides } from 'react-obsidian';
-import { GameModel } from '../../../core/model/GameModel';
-import {
-  HistoryViewModel,
-  useHistoryViewModel,
-} from '../model/historyViewModel';
+import { type GameModel } from '../../../core/model/GameModel';
+import { type HistoryViewModel, useHistoryViewModel } from '../model/historyViewModel';
 import { GameGraph } from '../../../core/di/GameGraph';
 import { EntryFactory } from '../services/ComponentFactory';
 

@@ -1,4 +1,4 @@
-import { ComponentFactory } from '../../utils/ComponentFactory';
+import { type ComponentFactory } from '../../utils/ComponentFactory';
 import { throws } from '../../../utils/throws';
 import { Entry } from '../Entry';
 

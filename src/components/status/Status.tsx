@@ -1,4 +1,5 @@
-import { DependenciesOf, injectComponent } from 'react-obsidian';
+import React from 'react';
+import { type DependenciesOf, injectComponent } from 'react-obsidian';
 import { StatusGraph } from './di/StatusGraph';
 
 export const _Status = ({
@@ -7,7 +8,7 @@ export const _Status = ({
   const { status } = useViewModel();
 
   return (
-    <div className="status" data-testid={'status'}>
+    <div className="status" data-testid="status">
       {status}
     </div>
   );

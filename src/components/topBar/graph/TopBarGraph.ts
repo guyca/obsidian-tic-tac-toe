@@ -1,6 +1,6 @@
 import { Graph, ObjectGraph, Provides, Singleton } from 'react-obsidian';
 import { topBarViewModel } from '../model/topBarViewModel';
-import { ThemeModel } from '../../../presentation/model/ThemeModel';
+import { type ThemeModel } from '../../../presentation/model/ThemeModel';
 import { ThemeGraph } from '../../../core/di/ThemeGraph';
 
 @Singleton()

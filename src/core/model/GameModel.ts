@@ -1,7 +1,7 @@
 import { MediatorObservable, Model, Observable } from 'react-obsidian';
 import { CurrentPlayer } from '../entities/CurrentPlayer';
 import { Squares } from '../entities/Squares';
-import { CalculateWinnerUseCase } from '../usecases/CalculateWinnerUseCase';
+import { type CalculateWinnerUseCase } from '../usecases/CalculateWinnerUseCase';
 import { History } from '../entities/History';
 
 export class GameModel extends Model {

@@ -1,4 +1,4 @@
-import { PlayerMark } from '../entities/PlayerMark';
+import { type PlayerMark } from '../entities/PlayerMark';
 
 const lines = [
   [0, 1, 2],
@@ -16,9 +16,9 @@ export class CalculateWinnerUseCase {
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
       if (
-        squares[a] &&
-        squares[a] === squares[b] &&
-        squares[a] === squares[c]
+        squares[a]
+        && squares[a] === squares[b]
+        && squares[a] === squares[c]
       ) {
         return squares[a];
       }

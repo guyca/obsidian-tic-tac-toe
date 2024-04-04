@@ -1,3 +1,4 @@
+import React from 'react';
 import { Square } from '../square/Square';
 
 export const Board = () => {

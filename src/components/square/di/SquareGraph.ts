@@ -1,11 +1,8 @@
 import { Graph, ObjectGraph, Provides } from 'react-obsidian';
-import { GameModel } from '../../../core/model/GameModel';
+import { type GameModel } from '../../../core/model/GameModel';
 import { GameGraph } from '../../../core/di/GameGraph';
-import {
-  useSquareViewModel,
-  squareViewModel as SquareViewModel,
-} from '../model/squareViewModel';
-import { Props } from '../Square';
+import { useSquareViewModel, type squareViewModel as SquareViewModel } from '../model/squareViewModel';
+import { type Props } from '../Square';
 
 @Graph({ subgraphs: [GameGraph] })
 export class SquareGraph extends ObjectGraph {

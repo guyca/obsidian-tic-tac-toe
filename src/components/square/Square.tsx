@@ -1,4 +1,5 @@
-import { DependenciesOf, injectComponent } from 'react-obsidian';
+import React from 'react';
+import { type DependenciesOf, injectComponent } from 'react-obsidian';
 import { SquareGraph } from './di/SquareGraph';
 
 export type Props = { index: number };

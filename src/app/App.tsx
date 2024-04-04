@@ -1,8 +1,9 @@
+import React from 'react';
 import { Board } from '../components/board/Board';
 import { Status } from '../components/status/Status';
 import { History } from '../components/history/History';
 import { TopBar } from '../components/topBar/TopBar';
-import { DependenciesOf, injectComponent } from 'react-obsidian';
+import { type DependenciesOf, injectComponent } from 'react-obsidian';
 import { AppGraph } from './AppGraph';
 
 const App = ({ useViewModel }: DependenciesOf<AppGraph, 'useViewModel'>) => {

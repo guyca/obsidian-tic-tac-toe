@@ -1,6 +1,6 @@
 import { Graph, ObjectGraph, Provides, Singleton } from 'react-obsidian';
 import { Window } from '../Window';
-import { Document } from '../Document';
+import { type Document } from '../Document';
 
 @Singleton()
 @Graph()

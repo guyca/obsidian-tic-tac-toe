@@ -1,8 +1,8 @@
 import { Graph, ObjectGraph, Provides } from 'react-obsidian';
 import { useEntryViewModel } from '../model/entryViewModel';
 import { GameGraph } from '../../../core/di/GameGraph';
-import { Props } from '../Entry';
-import { GameModel } from '../../../core/model/GameModel';
+import { type Props } from '../Entry';
+import { type GameModel } from '../../../core/model/GameModel';
 
 @Graph({ subgraphs: [GameGraph] })
 export class EntryGraph extends ObjectGraph {
