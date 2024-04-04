@@ -5,6 +5,7 @@ const config = {
   coverageReporters: ["json-summary", "text"],
   collectCoverageFrom: [
     'src/**/*.{ts,tsx}',
+    '!src/**/*Graph.ts',
     '!dist/**',
   ],
   collectCoverage: true,
