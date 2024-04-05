@@ -4,6 +4,7 @@
     "browser": true,
     "es2021": true
   },
+  "ignorePatterns": ["jest.config.js"],
   "extends": [
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",

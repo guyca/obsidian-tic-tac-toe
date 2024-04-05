@@ -1,4 +1,6 @@
 # Tic-Tac-Toe Game
+[![coverage](https://github.com/guyca/obsidian-tic-tac-toe/raw/gh-pages/badges/coverage-jest%20coverage.svg?raw=true)](https://github.com/guyca/obsidian-tic-tac-toe/tree/master/tests)
+
 
 A simple tic-tac-toe game implemented in React using MVVM (Model-View-ViewModel) architecture that utilizes [react-obsidian](https://github.com/wix-incubator/obsidian) for Dependency Injection.
 
