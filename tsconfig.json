@@ -12,7 +12,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "lib": ["dom", "ES6", "esnext"],
-    "jsx": "react",
+    "jsx": "react-jsx",
     "types": ["reflect-metadata"]
   }
 }
