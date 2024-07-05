@@ -24,7 +24,8 @@
     "react",
     "react-hooks",
     "@stylistic",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "obsidian"
   ],
   "rules": {
     "@stylistic/type-generic-spacing": "error",
@@ -50,6 +51,7 @@
         "disallowTypeAnnotations": false,
         "fixStyle": "inline-type-imports"
       }
-    ]
+    ],
+    "obsidian/unresolved-provider-dependencies": "error"
   }
 }
