@@ -1,14 +1,22 @@
 {
   "name": "obsidian-tic-tac-toe",
   "version": "0.1.0",
+  "scripts": {
+    "_prestart": "rm -rf node_modules/.cache/",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "npx jest",
+    "test-coverage": "npx jest --coverage",
+    "eject": "react-scripts eject",
+    "lint": "npx eslint src --ext .ts,.tsx --fix"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-obsidian": "^2.10.2",
     "react-scripts": "5.0.1",
     "reflect-metadata": "^0.1.13",
-    "typescript": "5.1.x",
-    "lint": "npx eslint src --ext .ts,.tsx --fix"
+    "typescript": "5.5.x"
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
@@ -39,15 +47,6 @@
   },
   "resolutions": {
     "jest": "^29.5.0"
-  },
-  "scripts": {
-    "_prestart": "rm -rf node_modules/.cache/",
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "npx jest",
-    "test-coverage": "npx jest --coverage",
-    "eject": "react-scripts eject",
-    "lint": "npx eslint src --ext .ts,.tsx --fix"
   },
   "eslintConfig": {
     "extends": [
