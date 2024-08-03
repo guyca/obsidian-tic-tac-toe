@@ -6688,17 +6688,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-obsidian@npm:2.x.x":
-  version: 2.6.2
-  resolution: "eslint-plugin-obsidian@npm:2.6.2"
+"eslint-plugin-obsidian@npm:^2.10.2":
+  version: 2.10.2
+  resolution: "eslint-plugin-obsidian@npm:2.10.2"
   dependencies:
     "@typescript-eslint/parser": 6.6.x
     "@typescript-eslint/utils": 6.6.x
     lodash: ^4.17.21
   peerDependencies:
     eslint: 8.x.x
+    eslint-plugin-obsidian: "*"
     react-obsidian: 2.x.x
-  checksum: 14223da49b95c6f83cc8070b249839e508947cdb858c5ac21617341461d7acda0257fa78b86ff4fb25a9ebe52edb6879d0920cfbd4e22c3028f75ead66728985
+  checksum: 2c38cd9f434df0933f2e5f7e9015b96f3cfe1b07972a9e1bbd8a69e0fa1468374dd93bc605fdf9313009a711e317e76da494664601a252d82310515a917ef9e6
   languageName: node
   linkType: hard
 
@@ -8617,7 +8618,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-cli@npm:^29.5.0, jest-cli@npm:^29.7.0":
+"jest-cli@npm:^29.7.0":
   version: 29.7.0
   resolution: "jest-cli@npm:29.7.0"
   dependencies:
@@ -10415,7 +10416,7 @@ __metadata:
     customize-cra: 1.0.0
     eslint: ^8.57.0
     eslint-plugin-jest-formatting: ^3.1.0
-    eslint-plugin-obsidian: 2.x.x
+    eslint-plugin-obsidian: ^2.10.2
     eslint-plugin-react: ^7.34.1
     eslint-plugin-react-hooks: ^4.6.0
     jest: ^29.5.0
@@ -10426,7 +10427,7 @@ __metadata:
     react: ^18.2.0
     react-app-rewired: 2.2.1
     react-dom: ^18.2.0
-    react-obsidian: 2.x.x
+    react-obsidian: ^2.10.2
     react-scripts: 5.0.1
     reflect-metadata: ^0.1.13
     typescript: 5.1.x
@@ -11965,16 +11966,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-obsidian@npm:2.x.x":
-  version: 2.3.0
-  resolution: "react-obsidian@npm:2.3.0"
+"react-obsidian@npm:^2.10.2":
+  version: 2.10.2
+  resolution: "react-obsidian@npm:2.10.2"
   dependencies:
     hoist-non-react-statics: 3.x.x
-    jest-cli: ^29.5.0
     reflect-metadata: ~0.1.13
   peerDependencies:
     react: "*"
-  checksum: b2698400e006e47a7e1ffd53927688ad0fe45244b614075ee8307bef8533b2a5986e74f0b2b6b39b7b9296b4781ae72dc8f192e762179f8d806dc8ebeac1ca8b
+  checksum: e96d3548ad3df0c1710255dcc9a935b186ac2b6a511562516ad7c7a0e3497c8956c24459a3c21854d1f736f0ecc135b10b9d3ea21b8c45099b0778eee925f7bf
   languageName: node
   linkType: hard
 
