@@ -1,5 +1,9 @@
 {
-  "cSpell.words": ["prestart", "usecases"],
+  "cSpell.words": [
+    "prestart",
+    "usecases",
+    "yalc"
+  ],
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

@@ -1,4 +1,3 @@
-import React from 'react';
 import { type DependenciesOf, injectComponent } from 'react-obsidian';
 import { StatusGraph } from './di/StatusGraph';
 

@@ -1,10 +1,10 @@
-import { Graph, ObjectGraph, Provides, Singleton } from 'react-obsidian';
+import { graph, ObjectGraph, provides, singleton } from 'react-obsidian';
 import { GameModel } from '../model/GameModel';
 import { CalculateWinnerUseCase } from '../usecases/CalculateWinnerUseCase';
 
-@Singleton() @Graph()
+@singleton() @graph()
 export class GameGraph extends ObjectGraph {
-  @Provides()
+  @provides()
   model(): GameModel {
     return new GameModel(new CalculateWinnerUseCase());
   }

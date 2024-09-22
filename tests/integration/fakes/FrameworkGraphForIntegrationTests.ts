@@ -1,19 +1,18 @@
 import { Window } from '../../../src/framework/Window';
 import { FrameworkGraph } from '../../../src/framework/di/FrameworkGraph';
-import { Graph, Provides, Singleton } from 'react-obsidian';
+import { graph, provides, singleton } from 'react-obsidian';
 import { FakeWindow } from './FakeWindow';
 import { FakeDocument } from './FakeDocument';
 import { Document } from '../../../src/framework/Document';
 
-@Singleton()
-@Graph()
+@singleton() @graph()
 export class FrameworkGraphForIntegrationTests extends FrameworkGraph {
-  @Provides()
+  @provides()
   override window() {
     return new FakeWindow() as Window;
   }
 
-  @Provides()
+  @provides()
   override document(): Document {
     return new FakeDocument();
   }

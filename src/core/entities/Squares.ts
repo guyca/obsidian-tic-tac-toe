@@ -1,7 +1,7 @@
 import { Observable } from 'react-obsidian';
 import { type PlayerMark } from './PlayerMark';
 
-export class Squares extends Observable<string[]> {
+export class Squares extends Observable<PlayerMark[]> {
   constructor() {
     super(Array.from({ length: 9 }));
   }

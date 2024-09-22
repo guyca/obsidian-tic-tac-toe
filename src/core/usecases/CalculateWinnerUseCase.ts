@@ -12,7 +12,7 @@ const lines = [
 ];
 
 export class CalculateWinnerUseCase {
-  public calculate(squares): PlayerMark | undefined {
+  public calculate(squares: PlayerMark[]): PlayerMark | undefined {
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
       if (

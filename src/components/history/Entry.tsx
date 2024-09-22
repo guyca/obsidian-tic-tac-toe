@@ -1,4 +1,3 @@
-import React from 'react';
 import { type DependenciesOf, injectComponent } from 'react-obsidian';
 import { EntryGraph } from './di/EntryGraph';
 
@@ -19,4 +18,4 @@ const _Entry = ({ useViewModel }: Props & Injected) => {
 };
 
 export const Entry = injectComponent<Props, Injected>(_Entry, EntryGraph);
-export const createEntry = (_, index: number) => <Entry index={index} />;
+export const createEntry = (_: any, index: number) => <Entry index={index} />;
