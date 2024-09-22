@@ -3,16 +3,16 @@ import { type PlayerMark } from './PlayerMark';
 
 export type Entry = {
   text: string
-  squares: string[]
+  squares: PlayerMark[]
   currentPlayer: PlayerMark
 };
 
 export class History extends Observable<Entry[]> {
-  constructor(squares: string[]) {
+  constructor(squares: PlayerMark[]) {
     super([{ text: 'Go to game start', squares: squares, currentPlayer: 'X' }]);
   }
 
-  public add(squares: string[], currentPlayer: PlayerMark) {
+  public add(squares: PlayerMark[], currentPlayer: PlayerMark) {
     this.value = [
       ...this.value,
       {

@@ -11,7 +11,7 @@ export class GameModel extends Model {
   public readonly status = new MediatorObservable<string>();
   public readonly isReady = new Observable<boolean>(false);
 
-  constructor(private calculateWinnerUseCase: CalculateWinnerUseCase) {
+  constructor(calculateWinnerUseCase: CalculateWinnerUseCase) {
     super();
     this.status.mapSource(this.currentPlayer, (player) => {
       const winner = calculateWinnerUseCase.calculate(this.squares.value);

@@ -9,6 +9,7 @@ const config = {
     '!dist/**',
   ],
   collectCoverage: true,
+  testPathIgnorePatterns: ['/node_modules/', '/dist/', '/.yalc/'],
 };
 
 module.exports = config;

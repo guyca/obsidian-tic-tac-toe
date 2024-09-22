@@ -1,4 +1,3 @@
-import React from 'react';
 import { injectComponent, type DependenciesOf } from 'react-obsidian';
 import { TopBarGraph } from '../graph/TopBarGraph';
 

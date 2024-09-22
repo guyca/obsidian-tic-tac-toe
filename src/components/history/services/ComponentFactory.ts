@@ -4,7 +4,7 @@ import { Entry } from '../Entry';
 
 type ComponentType = 'entry';
 
-export class EntryFactory implements ComponentFactory<ComponentType> {
+export class EntryFactory implements ComponentFactory<ComponentType, typeof Entry> {
   public create(type: ComponentType) {
     return type === 'entry' ? Entry : throws(`Unknown component type: ${type}`);
   }

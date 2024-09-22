@@ -2,51 +2,48 @@
   "name": "obsidian-tic-tac-toe",
   "version": "0.1.0",
   "scripts": {
-    "_prestart": "rm -rf node_modules/.cache/",
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
     "test": "npx jest",
     "test-coverage": "npx jest --coverage",
-    "eject": "react-scripts eject",
     "lint": "npx eslint src --ext .ts,.tsx --fix"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-obsidian": "^2.10.2",
-    "react-scripts": "5.0.1",
-    "reflect-metadata": "^0.1.13",
-    "typescript": "5.5.x"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-obsidian": "3.0.0-alpha.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.5",
-    "@babel/plugin-proposal-decorators": "^7.22.5",
-    "@babel/preset-env": "^7.22.5",
-    "@babel/preset-typescript": "^7.22.5",
+    "@babel/core": "^7.25.2",
+    "@babel/plugin-proposal-decorators": "^7.24.7",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
     "@stylistic/eslint-plugin": "^1.7.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^29.5.2",
-    "@types/jest-when": "^3.5.2",
-    "@types/react": "18.2.x",
-    "babel-jest": "^29.5.0",
-    "customize-cra": "1.0.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.13",
+    "@types/jest-when": "^3.5.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "babel-jest": "^29.7.0",
     "eslint": "^8.57.0",
     "eslint-plugin-jest-formatting": "^3.1.0",
-    "eslint-plugin-obsidian": "^2.10.2",
+    "eslint-plugin-obsidian": "^3.0.0-alpha.6",
     "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "jest": "^29.5.0",
-    "jest-environment-jsdom": "^29.5.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "jest-mock-extended": "^3.0.4",
-    "jest-when": "^3.5.2",
-    "prettier": "3.x.x",
-    "react-app-rewired": "2.2.1",
-    "typescript-eslint": "^7.5.0"
-  },
-  "resolutions": {
-    "jest": "^29.5.0"
+    "jest-when": "^3.6.0",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1",
+    "vite": "^5.4.1"
   },
   "eslintConfig": {
     "extends": [
@@ -65,5 +62,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "packageManager": "yarn@3.8.4+sha512.2fa718fa817b36ddbeb1be69b765d64749afaf0e0d582c04359f12fbd5f7f20ec52e189a531afe2e4903d792532065711adf56e0d0f559d6461a59a703ec8b44"
 }

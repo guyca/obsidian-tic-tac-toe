@@ -3,3 +3,7 @@ coverage/
 **/.DS_Store
 .yarn/cache/
 .yarn/install-state.gz
+.yalc/
+yalc.lock
+dist/
+*.tsbuildinfo

@@ -1,0 +1,15 @@
+{
+  "include": ["./src/**/*", "./src/custom.d.ts", "./tests/**/*"],
+  "compilerOptions": {
+    "target": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["dom", "ES6", "esnext"],
+    "jsx": "react-jsx"
+  }
+}
