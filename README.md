@@ -26,4 +26,4 @@ The repo contains two types of tests:
 ## Running locally
 
 1. yarn
-2. yarn start
+2. yarn dev
