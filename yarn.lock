@@ -7235,6 +7235,7 @@ __metadata:
     jest-mock-extended: ^3.0.4
     jest-when: ^3.6.0
     react: ^18.3.1
+    react-compiler-runtime: ^19.0.0-beta-8a03594-20241020
     react-dom: ^18.3.1
     react-obsidian: 3.0.0-alpha.6
     typescript: ^5.6.2
@@ -7599,6 +7600,15 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: b676f8c040cdc5b12723ad2f91414d267605b26419d5c821ff03befa817ddd10e238d22b25d604920340fd73efd8ba795465a0377c4adf45a4a41e4234e42dc4
+  languageName: node
+  linkType: hard
+
+"react-compiler-runtime@npm:^19.0.0-beta-8a03594-20241020":
+  version: 19.0.0-beta-9ee70a1-20241017
+  resolution: "react-compiler-runtime@npm:19.0.0-beta-9ee70a1-20241017"
+  peerDependencies:
+    react: ^18.2.0 || ^19.0.0
+  checksum: e8131623dc5a6ea7fe5d4b9c364bfda7bb3441d111d0b14f10b7c54b6a05f3e0aa5331ac72f4137a580c3119c1e228cafaf0bf3cb8894f372660aa346944213b
   languageName: node
   linkType: hard
 
