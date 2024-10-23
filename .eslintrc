@@ -7,6 +7,7 @@
   "ignorePatterns": ["jest.config.js"],
   "extends": [
     "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@stylistic/disable-legacy",
@@ -14,12 +15,17 @@
   ],
   "parserOptions": {
     "sourceType": "module",
-    "project": "./tsconfig.json",
+    "project": "./tsconfig.app.json",
     "ecmaFeatures": {
       "jsx": true
     }
   },
   "parser": "@typescript-eslint/parser",
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "plugins": [
     "react",
     "react-hooks",

@@ -3,7 +3,7 @@ import { TopBarGraph } from '../graph/TopBarGraph';
 
 type Injected = DependenciesOf<TopBarGraph, 'useViewModel'>;
 
-export const _DarkModeToggle = ({ useViewModel }: Injected) => {
+export const DarkModeToggle_ = ({ useViewModel }: Injected) => {
   const { toggleDarkMode } = useViewModel();
 
   return (
@@ -28,4 +28,4 @@ export const _DarkModeToggle = ({ useViewModel }: Injected) => {
   );
 };
 
-export const DarkModeToggle = injectComponent(_DarkModeToggle, TopBarGraph);
+export const DarkModeToggle = injectComponent(DarkModeToggle_, TopBarGraph);

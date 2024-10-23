@@ -7,7 +7,7 @@ export type Props = {
 
 type Injected = DependenciesOf<EntryGraph, 'useViewModel'>;
 
-const _Entry = ({ useViewModel }: Props & Injected) => {
+const Entry_ = ({ useViewModel }: Props & Injected) => {
   const { text, onClick } = useViewModel();
 
   return (
@@ -17,5 +17,5 @@ const _Entry = ({ useViewModel }: Props & Injected) => {
   );
 };
 
-export const Entry = injectComponent<Props, Injected>(_Entry, EntryGraph);
-export const createEntry = (_: any, index: number) => <Entry index={index} />;
+export const Entry = injectComponent<Props, Injected>(Entry_, EntryGraph);
+export const createEntry = (_: unknown, index: number) => <Entry index={index} />;

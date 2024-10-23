@@ -4,7 +4,7 @@ import { SquareGraph } from './di/SquareGraph';
 export type Props = { index: number };
 type Injected = DependenciesOf<SquareGraph, 'useViewModel'>;
 
-export const _Square = ({ useViewModel }: Injected) => {
+export const Square_ = ({ useViewModel }: Injected) => {
   const { text, testId, onClick } = useViewModel();
 
   return (
@@ -14,4 +14,4 @@ export const _Square = ({ useViewModel }: Injected) => {
   );
 };
 
-export const Square = injectComponent<Props, Injected>(_Square, SquareGraph);
+export const Square = injectComponent<Props, Injected>(Square_, SquareGraph);

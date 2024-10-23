@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { topBarViewModel } from '../../../../../src/components/topBar/model/topBarViewModel';
 import { fireClickEvent } from '../../../../utils/fireClickEvent';
-import { _DarkModeToggle as DarkModeToggle } from '../../../../../src/components/topBar/buttons/darkModeToggle';
+import { DarkModeToggle_ as DarkModeToggle } from '../../../../../src/components/topBar/buttons/darkModeToggle';
 
 describe('DarkModeToggle', () => {
   let viewModel: () => ReturnType<typeof topBarViewModel>;

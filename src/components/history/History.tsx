@@ -3,7 +3,7 @@ import { HistoryGraph } from './di/HistoryGraph';
 
 type Injected = DependenciesOf<HistoryGraph, 'useViewModel' | 'componentFactory'>;
 
-export const _History = ({ useViewModel, componentFactory }: Injected) => {
+export const History_ = ({ useViewModel, componentFactory }: Injected) => {
   const { entries } = useViewModel();
 
   return (
@@ -18,4 +18,4 @@ export const _History = ({ useViewModel, componentFactory }: Injected) => {
   );
 };
 
-export const History = injectComponent(_History, HistoryGraph);
+export const History = injectComponent(History_, HistoryGraph);
