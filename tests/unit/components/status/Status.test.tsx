@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { _Status as Status } from '../../../../src/components/status/Status';
+import { Status_ as Status } from '../../../../src/components/status/Status';
 import { StatusViewModel } from '../../../../src/components/status/model/statusViewModel';
 
 describe('Status', () => {

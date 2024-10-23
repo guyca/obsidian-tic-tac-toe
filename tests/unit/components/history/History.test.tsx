@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react';
-import { _History as History } from '../../../../src/components/history/History';
+import { History_ as History } from '../../../../src/components/history/History';
 import { HistoryViewModel } from '../../../../src/components/history/model/historyViewModel';
 import { ComponentFactory } from '../../../../src/components/utils/ComponentFactory';
 import { Entry } from '../../../../src/core/entities/History';
 
 describe('History', () => {
   let useViewModel: HistoryViewModel;
-  let componentFactory: ComponentFactory;
+  let componentFactory: ComponentFactory<any, any>;
   let entries: Entry[];
 
   beforeEach(() => {
