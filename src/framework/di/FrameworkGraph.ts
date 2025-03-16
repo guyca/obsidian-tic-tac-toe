@@ -1,15 +1,15 @@
-import { graph, ObjectGraph, provides, singleton } from 'react-obsidian';
+import { Graph, ObjectGraph, Provides, Singleton } from 'react-obsidian';
 import { Window } from '../Window';
 import { type Document } from '../Document';
 
-@singleton() @graph()
+@Singleton() @Graph()
 export class FrameworkGraph extends ObjectGraph {
-  @provides()
+  @Provides()
   window(): Window {
     return new Window(window);
   }
 
-  @provides()
+  @Provides()
   document(): Document {
     return document;
   }

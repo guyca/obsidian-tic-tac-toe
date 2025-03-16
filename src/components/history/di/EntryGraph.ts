@@ -1,10 +1,10 @@
-import { graph, ObjectGraph, provides } from 'react-obsidian';
+import { Graph, ObjectGraph, Provides } from 'react-obsidian';
 import { useEntryViewModel } from '../model/entryViewModel';
 import { GameGraph } from '../../../core/di/GameGraph';
 import { type Props } from '../Entry';
 import { type GameModel } from '../../../core/model/GameModel';
 
-@graph({ subgraphs: [GameGraph] })
+@Graph({ subgraphs: [GameGraph] })
 export class EntryGraph extends ObjectGraph {
   private index: number;
 
@@ -13,7 +13,7 @@ export class EntryGraph extends ObjectGraph {
     this.index = props.index;
   }
 
-  @provides()
+  @Provides()
   useViewModel(model: GameModel) {
     return () => useEntryViewModel(this.index, model);
   }
