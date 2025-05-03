@@ -7,3 +7,4 @@ coverage/
 yalc.lock
 dist/
 *.tsbuildinfo
+.swc/
