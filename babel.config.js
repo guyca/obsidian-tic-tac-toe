@@ -15,7 +15,7 @@ module.exports = function(api){
     "plugins": [
       ["babel-plugin-react-compiler", ReactCompilerConfig],
       "react-obsidian/dist/transformers/babel-plugin-obsidian",
-      ["@babel/plugin-proposal-decorators", { "legacy": true }]
+      ["@babel/plugin-proposal-decorators", { "version": "2023-11" }]
     ]
   }
 }
