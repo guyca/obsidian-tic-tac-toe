@@ -1,7 +1,6 @@
 import { graph, ObjectGraph, provides, singleton } from 'react-obsidian';
 import { Window } from '../Window';
 import { type Document } from '../Document';
-import { LocalStorage } from '../../persistency/localStorage';
 
 @singleton() @graph()
 export class FrameworkGraph extends ObjectGraph {
@@ -13,10 +12,5 @@ export class FrameworkGraph extends ObjectGraph {
   @provides()
   document(): Document {
     return document;
-  }
-
-  @provides()
-  localStorage(): LocalStorage {
-    return new LocalStorage();
   }
 }
