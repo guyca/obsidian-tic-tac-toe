@@ -4822,9 +4822,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-obsidian@npm:^2.16.0":
-  version: 2.16.0
-  resolution: "eslint-plugin-obsidian@npm:2.16.0"
+"eslint-plugin-obsidian@npm:^2.21.0":
+  version: 2.21.0
+  resolution: "eslint-plugin-obsidian@npm:2.21.0"
   dependencies:
     "@typescript-eslint/parser": ^7.18.0
     "@typescript-eslint/utils": ^7.18.0
@@ -4833,7 +4833,7 @@ __metadata:
     eslint: 8.x.x
     eslint-plugin-obsidian: "*"
     react-obsidian: 2.x.x
-  checksum: 199644e7965ecaf49a5ddc631c1f2102a241561a9e4cca5a8f52135b2585624a773923b253a96d21261e83da2e75edd7493ce0e58625f04c7cf5928e3df6b7b8
+  checksum: 0b2e06c1dc74c0ca55a3aed95162cd93b68cd2d18f5bdaf94d253cec4e35428690bd605ea2046b22a04cb657a2d2460a218a9b43adbe6057cb723a53b22f7367
   languageName: node
   linkType: hard
 
@@ -7287,6 +7287,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.25.9
     "@babel/plugin-proposal-decorators": ^7.25.9
+    "@babel/plugin-transform-class-properties": ^7.25.9
     "@babel/preset-env": ^7.25.9
     "@babel/preset-react": ^7.25.9
     "@babel/preset-typescript": ^7.25.9
@@ -7304,7 +7305,7 @@ __metadata:
     babel-plugin-react-compiler: beta
     eslint: ^8.57.0
     eslint-plugin-jest-formatting: ^3.1.0
-    eslint-plugin-obsidian: ^2.16.0
+    eslint-plugin-obsidian: ^2.21.0
     eslint-plugin-react: ^7.34.1
     eslint-plugin-react-compiler: beta
     eslint-plugin-react-hooks: ^5.1.0-rc.0
@@ -7317,7 +7318,7 @@ __metadata:
     react: ^18.3.1
     react-compiler-runtime: ^19.0.0-beta-8a03594-20241020
     react-dom: ^18.3.1
-    react-obsidian: 2.16.0
+    react-obsidian: ^2.21.0
     typescript: ^5.6.2
     typescript-eslint: ^8.0.1
     vite: ^5.4.1
@@ -7725,14 +7726,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-obsidian@npm:2.16.0":
-  version: 2.16.0
-  resolution: "react-obsidian@npm:2.16.0"
+"react-obsidian@npm:^2.21.0":
+  version: 2.21.0
+  resolution: "react-obsidian@npm:2.21.0"
   dependencies:
     hoist-non-react-statics: 3.x.x
   peerDependencies:
     react: "*"
-  checksum: 5b322de51ed7d91be38876a224bb414de00abb11f60d8f3961cfeb08cc1cbbb9e3c4cf890a14cfea704a716e486a7d4a07a857865d229c58b8adf1c283b2b007
+  checksum: 5c72c7b4a90f363cf3e10ed82016e9be431f32eb3cf31a1cfd5ff20fff19a78b559a0391a98ae891e72ec4d9bf697c5b44e98643148da769ed41dedcb7892361
   languageName: node
   linkType: hard
 
