@@ -2858,6 +2858,138 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-darwin-arm64@npm:1.11.24":
+  version: 1.11.24
+  resolution: "@swc/core-darwin-arm64@npm:1.11.24"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-darwin-x64@npm:1.11.24":
+  version: 1.11.24
+  resolution: "@swc/core-darwin-x64@npm:1.11.24"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm-gnueabihf@npm:1.11.24":
+  version: 1.11.24
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.11.24"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm64-gnu@npm:1.11.24":
+  version: 1.11.24
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.11.24"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm64-musl@npm:1.11.24":
+  version: 1.11.24
+  resolution: "@swc/core-linux-arm64-musl@npm:1.11.24"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-x64-gnu@npm:1.11.24":
+  version: 1.11.24
+  resolution: "@swc/core-linux-x64-gnu@npm:1.11.24"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-x64-musl@npm:1.11.24":
+  version: 1.11.24
+  resolution: "@swc/core-linux-x64-musl@npm:1.11.24"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-arm64-msvc@npm:1.11.24":
+  version: 1.11.24
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.11.24"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-ia32-msvc@npm:1.11.24":
+  version: 1.11.24
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.11.24"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-x64-msvc@npm:1.11.24":
+  version: 1.11.24
+  resolution: "@swc/core-win32-x64-msvc@npm:1.11.24"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core@npm:^1.11.21":
+  version: 1.11.24
+  resolution: "@swc/core@npm:1.11.24"
+  dependencies:
+    "@swc/core-darwin-arm64": 1.11.24
+    "@swc/core-darwin-x64": 1.11.24
+    "@swc/core-linux-arm-gnueabihf": 1.11.24
+    "@swc/core-linux-arm64-gnu": 1.11.24
+    "@swc/core-linux-arm64-musl": 1.11.24
+    "@swc/core-linux-x64-gnu": 1.11.24
+    "@swc/core-linux-x64-musl": 1.11.24
+    "@swc/core-win32-arm64-msvc": 1.11.24
+    "@swc/core-win32-ia32-msvc": 1.11.24
+    "@swc/core-win32-x64-msvc": 1.11.24
+    "@swc/counter": ^0.1.3
+    "@swc/types": ^0.1.21
+  peerDependencies:
+    "@swc/helpers": ">=0.5.17"
+  dependenciesMeta:
+    "@swc/core-darwin-arm64":
+      optional: true
+    "@swc/core-darwin-x64":
+      optional: true
+    "@swc/core-linux-arm-gnueabihf":
+      optional: true
+    "@swc/core-linux-arm64-gnu":
+      optional: true
+    "@swc/core-linux-arm64-musl":
+      optional: true
+    "@swc/core-linux-x64-gnu":
+      optional: true
+    "@swc/core-linux-x64-musl":
+      optional: true
+    "@swc/core-win32-arm64-msvc":
+      optional: true
+    "@swc/core-win32-ia32-msvc":
+      optional: true
+    "@swc/core-win32-x64-msvc":
+      optional: true
+  peerDependenciesMeta:
+    "@swc/helpers":
+      optional: true
+  checksum: 00bd52792ab838d1e18de16b81c7f50aafb308052d12872b253fa0d20fba1c15fd0555a08e434f823c915d58981fe9b1c837e083a48025dcfdd93a6efe75f99d
+  languageName: node
+  linkType: hard
+
+"@swc/counter@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "@swc/counter@npm:0.1.3"
+  checksum: df8f9cfba9904d3d60f511664c70d23bb323b3a0803ec9890f60133954173047ba9bdeabce28cd70ba89ccd3fd6c71c7b0bd58be85f611e1ffbe5d5c18616598
+  languageName: node
+  linkType: hard
+
+"@swc/types@npm:^0.1.21":
+  version: 0.1.21
+  resolution: "@swc/types@npm:0.1.21"
+  dependencies:
+    "@swc/counter": ^0.1.3
+  checksum: 857621e50ec78407bfeaa92663be86fc9ee2c9c103ccffd7f48c55b6f3c67a82e270f6524c7974c2c608a2ed0fcf4f00c20f61c8d1fdfd2aa55b2c42a28223f1
+  languageName: node
+  linkType: hard
+
 "@testing-library/dom@npm:^10.4.0":
   version: 10.4.0
   resolution: "@testing-library/dom@npm:10.4.0"
@@ -3433,6 +3565,17 @@ __metadata:
   version: 1.2.0
   resolution: "@ungap/structured-clone@npm:1.2.0"
   checksum: 4f656b7b4672f2ce6e272f2427d8b0824ed11546a601d8d5412b9d7704e83db38a8d9f402ecdf2b9063fc164af842ad0ec4a55819f621ed7e7ea4d1efcc74524
+  languageName: node
+  linkType: hard
+
+"@vitejs/plugin-react-swc@npm:3.9.0":
+  version: 3.9.0
+  resolution: "@vitejs/plugin-react-swc@npm:3.9.0"
+  dependencies:
+    "@swc/core": ^1.11.21
+  peerDependencies:
+    vite: ^4 || ^5 || ^6
+  checksum: 3c69ce56649742c1f1c5d4a5130263135825ea09a79935c9b307d83e0d29d1764c8ac063b1454df2f8cdf00d67fc6195fc94286e94f10a04d9e4da35e504df30
   languageName: node
   linkType: hard
 
@@ -7301,6 +7444,7 @@ __metadata:
     "@types/react": ^18.3.3
     "@types/react-dom": ^18.3.0
     "@vitejs/plugin-react": ^4.3.1
+    "@vitejs/plugin-react-swc": 3.9.0
     babel-jest: ^29.7.0
     babel-plugin-react-compiler: beta
     eslint: ^8.57.0
@@ -7316,9 +7460,9 @@ __metadata:
     jest-mock-extended: ^3.0.4
     jest-when: ^3.6.0
     react: ^18.3.1
-    react-compiler-runtime: ^19.0.0-beta-8a03594-20241020
     react-dom: ^18.3.1
     react-obsidian: ^2.21.0
+    swc-plugin-obsidian: ^2.21.0
     typescript: ^5.6.2
     typescript-eslint: ^8.0.1
     vite: ^5.4.1
@@ -7681,15 +7825,6 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: b676f8c040cdc5b12723ad2f91414d267605b26419d5c821ff03befa817ddd10e238d22b25d604920340fd73efd8ba795465a0377c4adf45a4a41e4234e42dc4
-  languageName: node
-  linkType: hard
-
-"react-compiler-runtime@npm:^19.0.0-beta-8a03594-20241020":
-  version: 19.0.0-beta-9ee70a1-20241017
-  resolution: "react-compiler-runtime@npm:19.0.0-beta-9ee70a1-20241017"
-  peerDependencies:
-    react: ^18.2.0 || ^19.0.0
-  checksum: e8131623dc5a6ea7fe5d4b9c364bfda7bb3441d111d0b14f10b7c54b6a05f3e0aa5331ac72f4137a580c3119c1e228cafaf0bf3cb8894f372660aa346944213b
   languageName: node
   linkType: hard
 
@@ -8496,6 +8631,16 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: 53b1e247e68e05db7b3808b99b892bd36fb096e6fba213a06da7fab22045e97597db425c724f2bbd6c99a3c295e1e73f3e4de78592289f38431049e1277ca0ae
+  languageName: node
+  linkType: hard
+
+"swc-plugin-obsidian@npm:^2.21.0":
+  version: 2.21.0
+  resolution: "swc-plugin-obsidian@npm:2.21.0"
+  peerDependencies:
+    "@swc/core": ^1.10.15
+    react-obsidian: 2.x
+  checksum: 02fcd73fd4121e63e688c302d4c204c2fb4268892e50752100df330803490bf87050dda93979ce299aa5d1fc0e7fa4ee42643ecfa54c77910ca3a5d7e9fdc308
   languageName: node
   linkType: hard
 
