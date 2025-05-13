@@ -27,3 +27,6 @@ The repo contains two types of tests:
 
 1. yarn
 2. yarn dev
+
+## Transpiling
+The app uses Babel to transpile the code. An example of how to use SWC for transpiling can be found in the (swc)[https://github.com/guyca/obsidian-tic-tac-toe/tree/swc] branch.
