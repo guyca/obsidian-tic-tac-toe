@@ -1,16 +1,22 @@
-import { Graph, ObjectGraph, Provides, Singleton } from 'react-obsidian';
+import { graph, ObjectGraph, provides, singleton } from 'react-obsidian';
 import { Window } from '../Window';
 import { type Document } from '../Document';
+import { LocalStorage } from '../../persistency/localStorage';
 
-@Singleton() @Graph()
+@singleton() @graph()
 export class FrameworkGraph extends ObjectGraph {
-  @Provides()
+  @provides()
   window(): Window {
     return new Window(window);
   }
 
-  @Provides()
+  @provides()
   document(): Document {
     return document;
+  }
+
+  @provides()
+  localStorage(): LocalStorage {
+    return new LocalStorage();
   }
 }

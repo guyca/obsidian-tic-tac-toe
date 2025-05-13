@@ -1,17 +1,17 @@
-import { Graph, ObjectGraph, Provides, Singleton } from 'react-obsidian';
+import { graph, ObjectGraph, provides, singleton } from 'react-obsidian';
 import { ThemeModel } from '../../presentation/model/ThemeModel';
 import { ApplyDarkModeUseCase } from '../../presentation/useCases/applyDarkModeUseCase';
 import { FrameworkGraph } from '../../framework/di/FrameworkGraph';
 import { type Window } from '../../framework/Window';
 
-@Singleton() @Graph({ subgraphs: [FrameworkGraph] })
+@singleton() @graph({ subgraphs: [FrameworkGraph] })
 export class ThemeGraph extends ObjectGraph {
-  @Provides()
+  @provides()
   themeModel(applyDarkModeUseCase: ApplyDarkModeUseCase, window: Window) {
     return new ThemeModel(applyDarkModeUseCase, window);
   }
 
-  @Provides()
+  @provides()
   applyDarkModeUseCase(document: Document): ApplyDarkModeUseCase {
     return new ApplyDarkModeUseCase(document);
   }

@@ -1,10 +1,10 @@
-import { Graph, ObjectGraph, Provides } from 'react-obsidian';
+import { graph, ObjectGraph, provides } from 'react-obsidian';
 import { type GameModel } from '../../../core/model/GameModel';
 import { GameGraph } from '../../../core/di/GameGraph';
 import { useSquareViewModel, type squareViewModel as SquareViewModel } from '../model/squareViewModel';
 import { type Props } from '../Square';
 
-@Graph({ subgraphs: [GameGraph] })
+@graph({ subgraphs: [GameGraph] })
 export class SquareGraph extends ObjectGraph {
   private index: number;
 
@@ -13,7 +13,7 @@ export class SquareGraph extends ObjectGraph {
     this.index = props.index;
   }
 
-  @Provides()
+  @provides()
   useViewModel(model: GameModel): SquareViewModel {
     return () => useSquareViewModel(this.index, model);
   }
