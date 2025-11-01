@@ -11,7 +11,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-obsidian": "^2.21.0"
+    "react-obsidian": "^2.25.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.9",
@@ -34,7 +34,7 @@
     "babel-plugin-react-compiler": "beta",
     "eslint": "^8.57.0",
     "eslint-plugin-jest-formatting": "^3.1.0",
-    "eslint-plugin-obsidian": "^2.21.0",
+    "eslint-plugin-obsidian": "^2.25.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-compiler": "beta",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
